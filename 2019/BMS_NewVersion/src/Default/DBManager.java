@@ -13,12 +13,12 @@ public class DBManager {
 		Connection conn = null;
 		Statement stmt;
 		
-		try { //Database ¿¬°á ÄÚµå
+		try { //Database ì—°ê²° ì½”ë“œ
 			String url = "jdbc:mysql://localhost:3306/bms_new_version?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
-			conn = DriverManager.getConnection(url, "root", "tj102938");
+			conn = DriverManager.getConnection(url, "root", "mysql");
 			
-		} catch (Exception e) { //¿¬°á ½ÇÆÐ½Ã ¿À·ù¸Þ¼¼Áö Ãâ·Â
-			System.out.println("DB ¿¬°á ½ÇÆÐ");
+		} catch (Exception e) { //ì—°ê²° ì‹¤íŒ¨ì‹œ ì˜¤ë¥˜ë©”ì„¸ì§€ ì¶œë ¥
+			System.out.println("DB ì—°ê²° ì‹¤íŒ¨");
 			e.printStackTrace();
 		}
 		return conn;
